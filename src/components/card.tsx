@@ -13,7 +13,7 @@ interface House {
 
 export function Card(house: House) {
   return (
-    <div key={house.id} className="group flex flex-col w-full sm:w-[280px] md:w-[300px] bg-zinc-100 cursor-pointer p-3 sm:p-2 rounded-3xl overflow-hidden">
+    <div key={house.id} className="group flex flex-col w-full bg-zinc-100 cursor-pointer p-3 sm:p-2 rounded-3xl overflow-hidden">
     <div className="max-sm:h-[200px] overflow-hidden rounded-2xl">
       <Image src={house.image} alt={house.title} width={300} height={200} quality={100} className="group-hover:scale-105 transition-transform duration-500 w-full h-full max-sm:h-full sm:h-[180px] md:h-[200px] object-fill" />
     </div>
