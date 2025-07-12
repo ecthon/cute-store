@@ -1,12 +1,15 @@
 import { houses } from "@/data/houses";
 import { Card } from "./card";
-import { SearchForm } from "./search-form";
+import { SearchForm } from "../search-form";
 
 export function HouseStore() {
   return (
     <div className="flex flex-col w-full max-w-[1248px] mx-auto space-y-4 px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0">
-        <h1 className="text-xl sm:text-2xl font-bold text-black">Houses</h1>
+        <div className="flex flex-col">
+          <h1 className="text-xl sm:text-2xl font-bold text-black">Casas</h1>
+          <p className="text-md text-zinc-500">Hospede-se nos planetas mais incríveis da galáxia.</p>
+        </div>
         <SearchForm />
       </div>
       

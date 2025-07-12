@@ -1,11 +1,12 @@
-import Image from "next/image";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { ChartUpIcon, StarIcon, StartUpIconFreeIcons } from "@hugeicons/core-free-icons";
-import { HouseStore } from "@/components/house-store";
+import { Heading } from "@/components/home/heading";
+import { HouseStore } from "@/components/houses/house-store";
 
 
 export default function Home() {
   return (
-    <HouseStore />
+    <div className="flex flex-col space-y-10">
+      <Heading />
+      <HouseStore />
+    </div>
   );
 }
