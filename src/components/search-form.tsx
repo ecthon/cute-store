@@ -9,7 +9,7 @@ export function SearchForm() {
         <HugeiconsIcon icon={SearchIcon} size={18} color="currentColor" strokeWidth={1.5} className="text-zinc-500" />
         <input
             placeholder="Filtre por planetas ou galáxias..."
-            className="flex-1 bg-transparent text-sm outline-none placeholder:text-zinc-500 font-semibold text-zinc-800"
+            className="flex-1 bg-transparent text-sm outline-none placeholder:text-zinc-500 font-sans font-semibold text-zinc-800"
             required
             />
         </form>
