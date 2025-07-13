@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Mona_Sans, Quicksand } from "next/font/google";
 import "./globals.css";
 
 
 const quicksand = Quicksand({
   variable: "--font-quicksand",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const monaSans = Mona_Sans({
+  variable: "--font-mona-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
@@ -22,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksand.variable} ${quicksand.variable} antialiased`}
+        className={`${quicksand.variable} ${monaSans.variable} antialiased`}
       >
         {children}
       </body>

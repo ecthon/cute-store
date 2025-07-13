@@ -5,8 +5,8 @@ export function Heading() {
     <div className="flex flex-col-reverse md:flex-row items-center justify-center min-h-[400px] w-full max-w-[1248px] mx-auto space-y-4 px-4 sm:px-6 lg:px-8 bg-amber-50 rounded-3xl py-8">
       {/* Left Side */}
       <div className="flex w-full md:w-1/2 flex-col justify-center gap-4 text-center md:text-left">
-        <h1 className="text-3xl md:text-4xl font-bold text-black">Planejando suas férias interestelares?🪐</h1>
-        <p className="text-sm md:text-md text-zinc-500">Alugue uma casinha futurista em qualquer canto da galáxia — suas férias interplanetárias começam aqui!</p>
+        <h1 className="text-5xl md:text-4xl font-mono font-bold text-zinc-900">Planejando suas férias interestelares?🪐</h1>
+        <p className="text-sm md:text-md font-sans text-zinc-500">Alugue uma casinha futurista em qualquer canto da galáxia — suas férias interplanetárias começam aqui!</p>
       </div>
 
       {/* Right Side */}
