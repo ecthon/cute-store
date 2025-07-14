@@ -4,10 +4,11 @@ import { ArrowLeftIcon, ArrowRightIcon, Bathtub01Icon, BedIcon, Car01FreeIcons, 
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { use } from "react";
 
-export default function CapsuleHouseDetails({ params }: { params: { id: string } }) { 
+export default function CapsuleHouseDetails({ params }: { params: Promise<{ id: string }> }) { 
     const router = useRouter();
-    const { id } = params;
+    const { id } = use(params); // Use React.use() to unwrap the Promise
     const house = houses.find((house) => house.id === Number(id));
 
     if (!house) {
