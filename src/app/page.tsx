@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { Heading } from "@/components/home/heading";
 import { HouseStore } from "@/components/houses/house-store";
 import { Reservation } from "@/components/reservation";
@@ -9,6 +10,7 @@ export default function Home() {
       <Heading />
       <HouseStore />
       <Reservation />
+      <Footer />
     </div>
   );
 }
