@@ -3,7 +3,7 @@ import { House } from "@/types/house.type";
 export const houses: House[] = [
     {
       id: 1,
-      title: "House 1",
+      title: "Capsule House 1",
       image: "/houses/01.jpeg",
       price: 75,
       rating: 5.0,
@@ -16,7 +16,7 @@ export const houses: House[] = [
     },
     {
       id: 2,
-      title: "House 2",
+      title: "Capsule House 2",
       image: "/houses/02.jpeg",
       price: 150,
       rating: 5.0,
@@ -29,7 +29,7 @@ export const houses: House[] = [
     },    
     {
       id: 3,
-      title: "House 3",
+      title: "Capsule House 3",
       image: "/houses/03.jpeg",
       price: 100,
       rating: 5.0,
@@ -42,7 +42,7 @@ export const houses: House[] = [
     },        
     {
       id: 4,
-      title: "House 4",
+      title: "Capsule House 4",
       image: "/houses/04.jpeg",
       price: 220,
       rating: 5.0,
@@ -55,7 +55,7 @@ export const houses: House[] = [
     },    
     {
       id: 5,
-      title: "House 5",
+      title: "Capsule House 5",
       image: "/houses/05.jpeg",
       price: 355,
       rating: 5.0,
@@ -68,7 +68,7 @@ export const houses: House[] = [
     },
     {
       id: 6,
-      title: "House 6",
+      title: "Capsule House 6",
       image: "/houses/06.jpeg",
       price: 315,
       rating: 5.0,
@@ -81,7 +81,7 @@ export const houses: House[] = [
     },
     {
       id: 7,
-      title: "House 7",
+      title: "Capsule House 7",
       image: "/houses/07.jpeg",
       price: 315,
       rating: 5.0,
@@ -94,7 +94,7 @@ export const houses: House[] = [
     },
     {
       id: 8,
-      title: "House 8",
+      title: "Capsule House 8",
       image: "/houses/08.jpeg",
       price: 315,
       rating: 5.0,
@@ -107,7 +107,7 @@ export const houses: House[] = [
     },
     {
       id: 9,
-      title: "House 9",
+      title: "Capsule House 9",
       image: "/houses/09.jpeg",
       price: 315,
       rating: 5.0,
@@ -120,7 +120,7 @@ export const houses: House[] = [
     },
     {
       id: 10,
-      title: "House 10",
+      title: "Capsule House 10",
       image: "/houses/10.jpeg",
       price: 315,
       rating: 5.0,
@@ -133,7 +133,7 @@ export const houses: House[] = [
     },
     {
       id: 11,
-      title: "House 11",
+      title: "Capsule House 11",
       image: "/houses/11.jpeg",
       price: 315,
       rating: 5.0,
@@ -146,7 +146,7 @@ export const houses: House[] = [
     },
     {
       id: 12,
-      title: "House 12",
+      title: "Capsule House 12",
       image: "/houses/12.jpeg",
       price: 315,
       rating: 5.0,
@@ -159,7 +159,7 @@ export const houses: House[] = [
     },
     {
       id: 13,
-      title: "House 13",
+      title: "Capsule House 13",
       image: "/houses/13.jpeg",
       price: 315,
       rating: 5.0,
@@ -172,7 +172,7 @@ export const houses: House[] = [
     },
     {
       id: 14,
-      title: "House 14",
+      title: "Capsule House 14",
       image: "/houses/14.jpeg",
       price: 315,
       rating: 5.0,
@@ -185,7 +185,7 @@ export const houses: House[] = [
     },
     {
       id: 15,
-      title: "House 15",
+      title: "Capsule House 15",
       image: "/houses/15.jpeg",
       price: 315,
       rating: 5.0,
@@ -198,7 +198,7 @@ export const houses: House[] = [
     },
     {
       id: 16,
-      title: "House 16",
+      title: "Capsule House 16",
       image: "/houses/16.jpeg",
       price: 315,
       rating: 5.0,
@@ -209,5 +209,4 @@ export const houses: House[] = [
       location: "Dione (Saturno)",
       description: "Mansão em Dione com 4 quartos, 3 banheiros e 2 vagas. Possui penhascos de gelo e vista panorâmica para Saturno.",
     },
-
   ];

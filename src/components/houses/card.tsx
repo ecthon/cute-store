@@ -1,6 +1,8 @@
+"use client";
 import { ChartUpIcon, StarIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface House {
   id: number;
@@ -12,8 +14,13 @@ interface House {
 }
 
 export function Card(house: House) {
+  const router = useRouter();
   return (
-    <div key={house.id} className="group flex flex-col w-full bg-zinc-100 cursor-pointer p-3 sm:p-2 rounded-3xl overflow-hidden">
+    <div 
+      key={house.id}
+      className="group flex flex-col w-full bg-zinc-100 cursor-pointer p-3 sm:p-2 rounded-3xl overflow-hidden"
+      onClick={() => router.push(`/capsule-house-details/${house.id}`)}
+    >
     <div className="max-sm:h-[200px] overflow-hidden rounded-2xl">
       <Image src={house.image} alt={house.title} width={300} height={200} quality={100} className="group-hover:scale-105 transition-transform duration-500 w-full h-full max-sm:h-full sm:h-[180px] md:h-[200px] object-fill" />
     </div>
