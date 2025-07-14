@@ -1,13 +1,16 @@
 import {
-    Rocket,
-    SatelliteDish,
-    ShieldCheck,
-    Mail,
-    MapPin,
-    PlaneTakeoff,
-    Github,
-    Twitter
-} from "lucide-react";
+    Rocket01Icon,
+    SatelliteIcon,
+    // ShieldDoneIcon,
+    Mail01Icon,
+    Location01Icon,
+    AirplaneTakeOffIcon,
+    Github01Icon,
+    TwitterIcon,
+    GoogleDocIcon,
+    Linkedin01Icon
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 
 export function Footer() {
     return (
@@ -15,8 +18,11 @@ export function Footer() {
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
                 <div>
                     <h3 className="text-xl font-bold text-black flex items-center gap-2 group">
-                        <Rocket
+                        <HugeiconsIcon
+                            icon={Rocket01Icon}
                             size={20}
+                            color="currentColor"
+                            strokeWidth={1.5}
                             className="transition duration-300 group-hover:drop-shadow-[0_0_6px_#0ea5e9] text-sky-500"
                         />
                         Base²²
@@ -29,28 +35,31 @@ export function Footer() {
                     {/* Redes sociais */}
                     <div className="flex gap-4 mt-4">
                         <a
-                            href="https://github.com/seuusuario"
+                            href="https://github.com/ecthon"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="transition duration-300 hover:text-black hover:scale-110"
                         >
-                            <Github size={20} />
+                            <HugeiconsIcon icon={Github01Icon} size={20} color="currentColor" strokeWidth={1.5} />
                         </a>
                         <a
-                            href="https://twitter.com/seuusuario"
+                            href="https://linkedin.com/in/ecthon"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="transition duration-300 hover:text-sky-500 hover:scale-110"
                         >
-                            <Twitter size={20} />
+                            <HugeiconsIcon icon={Linkedin01Icon} size={20} color="currentColor" strokeWidth={1.5} />
                         </a>
                     </div>
                 </div>
 
                 <div>
                     <h4 className="text-md font-semibold mb-2 flex items-center gap-2 group">
-                        <PlaneTakeoff
+                        <HugeiconsIcon
+                            icon={AirplaneTakeOffIcon}
                             size={18}
+                            color="currentColor"
+                            strokeWidth={1.5}
                             className="transition duration-300 group-hover:scale-110 group-hover:text-violet-500"
                         />
                         Galáxia de Links
@@ -65,8 +74,11 @@ export function Footer() {
 
                 <div>
                     <h4 className="text-md font-semibold mb-2 flex items-center gap-2 group">
-                        <ShieldCheck
+                        <HugeiconsIcon
+                            icon={GoogleDocIcon}
                             size={18}
+                            color="currentColor"
+                            strokeWidth={1.5}
                             className="transition duration-300 group-hover:text-emerald-500 group-hover:scale-110"
                         />
                         Documentos Estelares
@@ -80,22 +92,31 @@ export function Footer() {
 
                 <div>
                     <h4 className="text-md font-semibold mb-2 flex items-center gap-2 group">
-                        <SatelliteDish
+                        <HugeiconsIcon
+                            icon={SatelliteIcon}
                             size={18}
+                            color="currentColor"
+                            strokeWidth={1.5}
                             className="transition duration-300 group-hover:text-yellow-500 group-hover:scale-110"
                         />
                         Contato Espacial
                     </h4>
                     <p className="text-sm flex items-center gap-2 group">
-                        <Mail
+                        <HugeiconsIcon
+                            icon={Mail01Icon}
                             size={14}
+                            color="currentColor"
+                            strokeWidth={1.5}
                             className="transition duration-300 group-hover:text-sky-500 group-hover:drop-shadow-[0_0_4px_#0ea5e9]"
                         />
                         contato@base22.space
                     </p>
                     <p className="text-sm flex items-center gap-2 group">
-                        <MapPin
+                        <HugeiconsIcon
+                            icon={Location01Icon}
                             size={14}
+                            color="currentColor"
+                            strokeWidth={1.5}
                             className="transition duration-300 group-hover:text-pink-500 group-hover:scale-110"
                         />
                         Centro de Comando: Terra • AM-03
@@ -106,7 +127,7 @@ export function Footer() {
 
             <div className="border-t border-zinc-200 mt-4 pt-4 text-sm text-center text-zinc-500">
                 <p>&copy; {new Date().getFullYear()} <b>Base²²</b>. Todos os direitos reservados em todos os planetas.</p>
-                <p className="mt-1">Desenvolvido por <b>@ecthon</b> com 💻, ☕ e um toque de poeira cósmica.</p>
+                <p className="mt-1">Desenvolvido por <b>@ecthon</b> com ☕ e um toque de poeira cósmica.</p>
             </div>
         </footer>
     );
