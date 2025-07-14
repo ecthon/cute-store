@@ -13,7 +13,7 @@ export default function Details() {
             </div>
 
             <div className="flex w-full max-w-[1248px] mx-auto gap-8 border-2 border-zinc-200 p-4 rounded-4xl">
-                <div className="flex w-1/2 items-center justify-center">
+                <div className="flex w-1/2 items-center justify-center rounded-2xl overflow-hidden p-4 bg-zinc-100">
                     <Image src="/house.png" alt="House" width={500} height={500} />
                 </div>
 
@@ -34,15 +34,15 @@ export default function Details() {
                     <div className="flex gap-4">
                         <div className="flex items-center gap-2">
                             <HugeiconsIcon icon={BedIcon} size={18} color="currentColor" strokeWidth={2} className="text-zinc-500" />
-                            <p className="text-sm font-semibold text-zinc-500">3</p>
+                            <p className="text-sm font-semibold text-zinc-900">3</p>
                         </div>
                         <div className="flex items-center gap-2">
                             <HugeiconsIcon icon={Bathtub01Icon} size={18} color="currentColor" strokeWidth={2} className="text-zinc-500" />
-                            <p className="text-sm font-semibold text-zinc-500">3</p>
+                            <p className="text-sm font-semibold text-zinc-900">3</p>
                         </div>
                         <div className="flex items-center gap-2">
                             <HugeiconsIcon icon={Car01FreeIcons} size={18} color="currentColor" strokeWidth={2} className="text-zinc-500" />
-                            <p className="text-sm font-semibold text-zinc-500">1</p>
+                            <p className="text-sm font-semibold text-zinc-900">1</p>
                         </div>
                     </div>
                     <p className="text-sm font-semibold text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
