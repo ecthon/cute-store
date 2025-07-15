@@ -4,12 +4,17 @@ import { ArrowLeftIcon, ArrowRightIcon, Bathtub01Icon, BedIcon, Car01FreeIcons, 
 import { HugeiconsIcon } from "@hugeicons/react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { use } from "react";
+import { use, useState } from "react";
+import RentalModal from "@/components/rental-modal";
 
 export default function CapsuleHouseDetails({ params }: { params: Promise<{ id: string }> }) { 
     const router = useRouter();
     const { id } = use(params); // Use React.use() to unwrap the Promise
     const house = houses.find((house) => house.id === Number(id));
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => setIsModalOpen(true);
+    const handleCloseModal = () => setIsModalOpen(false);
 
     if (!house) {
         return <div>House not found</div>;
@@ -60,13 +65,22 @@ export default function CapsuleHouseDetails({ params }: { params: Promise<{ id: 
                     <p className="text-sm font-semibold text-zinc-500">{house.description}</p>
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-zinc-100 p-4 rounded-lg mt-2 max-md:rounded-3xl">
                         <p className="text-xl md:text-2xl font-bold text-zinc-900">R$ {house.price} <span className="text-sm font-semibold text-zinc-500">/ dia</span></p>
-                        <button className="flex items-center gap-2 bg-zinc-900 text-white px-4 py-2 rounded-lg font-bold cursor-pointer w-full sm:w-auto justify-center">
+                        <button 
+                            onClick={handleOpenModal}
+                            className="flex items-center gap-2 bg-zinc-900 text-white px-4 py-2 rounded-lg font-bold cursor-pointer w-full sm:w-auto justify-center hover:bg-zinc-800 transition-colors"
+                        >
                             <HugeiconsIcon icon={ArrowRightIcon} size={18} color="currentColor" strokeWidth={2} className="text-white" />
                             Alugar
                         </button>
                     </div>
                 </div>
             </div>
+            
+            <RentalModal 
+                isOpen={isModalOpen}
+                onClose={handleCloseModal}
+                house={house}
+            />
         </div>
     )
 }
