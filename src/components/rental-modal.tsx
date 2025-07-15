@@ -3,6 +3,8 @@ import { Cancel01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { House } from "@/types/house.type";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import ProgressBar from "./progress-bar";
 
 interface RentalModalProps {
     isOpen: boolean;
@@ -12,11 +14,22 @@ interface RentalModalProps {
 
 export default function RentalModal({ isOpen, onClose, house }: RentalModalProps) {
     const router = useRouter();
+    const [loading, setLoading] = useState(false);
     if (!isOpen) return null;
+
+    const handleConfirm = () => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+            router.push("/");
+        }, 1500);
+    };
 
     return (
         <div className="fixed inset-0 bg-black/50 bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4">
             <div className="bg-white rounded-2xl p-3 sm:p-6 w-full max-w-xs sm:max-w-md max-h-[95vh] sm:max-h-[90vh] overflow-y-auto">
+                {loading && <div className="mb-3"><ProgressBar loading height="h-2" />
+                </div>}
                 <div className="flex items-center justify-between mb-3 sm:mb-4">
                     <h2 className="text-lg sm:text-xl font-bold text-zinc-900">Alugar: {house.title}</h2>
                     <button
@@ -72,14 +85,16 @@ export default function RentalModal({ isOpen, onClose, house }: RentalModalProps
                         <button
                             onClick={onClose}
                             className="flex-1 px-4 py-2 sm:py-3 border border-zinc-300 text-zinc-700 rounded-lg font-medium hover:bg-zinc-50 transition-colors cursor-pointer text-sm sm:text-base"
+                            disabled={loading}
                         >
                             Cancelar
                         </button>
                         <button
                             className="flex-1 px-4 py-2 sm:py-3 bg-zinc-900 text-white rounded-lg font-medium hover:bg-zinc-800 transition-colors cursor-pointer text-sm sm:text-base"
-                            onClick={() => router.push("/")}
+                            onClick={handleConfirm}
+                            disabled={loading}
                         >
-                            Confirmar Reserva
+                            {loading ? "Processando..." : "Confirmar Reserva"}
                         </button>
                     </div>
                 </div>
