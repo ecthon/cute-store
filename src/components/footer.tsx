@@ -1,12 +1,10 @@
 import {
     Rocket01Icon,
     SatelliteIcon,
-    // ShieldDoneIcon,
     Mail01Icon,
     Location01Icon,
     AirplaneTakeOffIcon,
     Github01Icon,
-    TwitterIcon,
     GoogleDocIcon,
     Linkedin01Icon
 } from "@hugeicons/core-free-icons";
