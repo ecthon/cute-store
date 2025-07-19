@@ -8,7 +8,7 @@ export function HouseStore() {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0">
         <div className="flex flex-col">
           <h1 className="text-xl sm:text-2xl font-mono font-bold text-black">Casas</h1>
-          <p className="text-md font-sans text-zinc-500">Hospede-se nos planetas mais incríveis da galáxia.</p>
+          <p className="text-md font-sans text-zinc-500">Hospede-se nos planetas e galáxia mais incríveis do universo.</p>
         </div>
         <SearchForm />
       </div>

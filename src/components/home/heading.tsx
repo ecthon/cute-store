@@ -7,7 +7,7 @@ export function Heading() {
         {/* Left Side */}
         <div className="flex w-full md:w-1/2 flex-col justify-center gap-4 text-center md:text-left">
           <h1 className="text-5xl max-sm:text-3xl font-mono font-bold text-zinc-900">Planejando suas férias interestelares?🪐</h1>
-          <p className="text-md md:text-md font-sans text-orange-900">Alugue uma casinha futurista em qualquer canto da galáxia — suas férias interplanetárias começam aqui!</p>
+          <p className="text-md md:text-md font-sans text-orange-900">Alugue uma casinha futurista em qualquer lugar do cosmos — suas férias interplanetárias começam aqui!</p>
         </div>
 
         {/* Right Side */}

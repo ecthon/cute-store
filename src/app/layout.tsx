@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Mona_Sans, Quicksand } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 
 const quicksand = Quicksand({
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${quicksand.variable} ${monaSans.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
